@@ -1,0 +1,131 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/titocal/Documents/school work/2019 SPRINGS/MUlticore/research-project/concurrent-bst/transactional-version/rstm_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d4e5b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d4e5b.dir/build.make CMakeFiles/cmTC_d4e5b.dir/build
+make[1]: Entering directory '/home/titocal/Documents/school work/2019 SPRINGS/MUlticore/research-project/concurrent-bst/transactional-version/rstm_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d4e5b.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -O2 -g -DNDEBUG   -o CMakeFiles/cmTC_d4e5b.dir/CheckSymbolExists.c.o   -c "/home/titocal/Documents/school work/2019 SPRINGS/MUlticore/research-project/concurrent-bst/transactional-version/rstm_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_d4e5b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4e5b.dir/link.txt --verbose=1
+/usr/bin/cc    -O2 -g -DNDEBUG    CMakeFiles/cmTC_d4e5b.dir/CheckSymbolExists.c.o  -o cmTC_d4e5b -rdynamic 
+CMakeFiles/cmTC_d4e5b.dir/CheckSymbolExists.c.o: In function `main':
+/home/titocal/Documents/school work/2019 SPRINGS/MUlticore/research-project/concurrent-bst/transactional-version/rstm_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d4e5b.dir/build.make:97: recipe for target 'cmTC_d4e5b' failed
+make[1]: *** [cmTC_d4e5b] Error 1
+make[1]: Leaving directory '/home/titocal/Documents/school work/2019 SPRINGS/MUlticore/research-project/concurrent-bst/transactional-version/rstm_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d4e5b/fast' failed
+make: *** [cmTC_d4e5b/fast] Error 2
+
+File /home/titocal/Documents/school work/2019 SPRINGS/MUlticore/research-project/concurrent-bst/transactional-version/rstm_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/titocal/Documents/school work/2019 SPRINGS/MUlticore/research-project/concurrent-bst/transactional-version/rstm_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_72282/fast"
+/usr/bin/make -f CMakeFiles/cmTC_72282.dir/build.make CMakeFiles/cmTC_72282.dir/build
+make[1]: Entering directory '/home/titocal/Documents/school work/2019 SPRINGS/MUlticore/research-project/concurrent-bst/transactional-version/rstm_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_72282.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create -O2 -g -DNDEBUG   -o CMakeFiles/cmTC_72282.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_72282
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72282.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -O2 -g -DNDEBUG    CMakeFiles/cmTC_72282.dir/CheckFunctionExists.c.o  -o cmTC_72282 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_72282.dir/build.make:97: recipe for target 'cmTC_72282' failed
+make[1]: *** [cmTC_72282] Error 1
+make[1]: Leaving directory '/home/titocal/Documents/school work/2019 SPRINGS/MUlticore/research-project/concurrent-bst/transactional-version/rstm_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_72282/fast' failed
+make: *** [cmTC_72282/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test CXX_HAS_-m32 failed with the following output:
+Change Dir: /home/titocal/Documents/school work/2019 SPRINGS/MUlticore/research-project/concurrent-bst/transactional-version/rstm_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c1443/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c1443.dir/build.make CMakeFiles/cmTC_c1443.dir/build
+make[1]: Entering directory '/home/titocal/Documents/school work/2019 SPRINGS/MUlticore/research-project/concurrent-bst/transactional-version/rstm_build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c1443.dir/src.cxx.o
+/usr/bin/c++     -Wall -msse2 -mfpmath=sse -march=core2 -mtune=core2 -DCXX_HAS_-m32  -O3 -g   -m32 -o CMakeFiles/cmTC_c1443.dir/src.cxx.o -c "/home/titocal/Documents/school work/2019 SPRINGS/MUlticore/research-project/concurrent-bst/transactional-version/rstm_build/CMakeFiles/CMakeTmp/src.cxx"
+<command-line>:0:9: warning: missing whitespace after the macro name
+Linking CXX executable cmTC_c1443
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1443.dir/link.txt --verbose=1
+/usr/bin/c++    -Wall -msse2 -mfpmath=sse -march=core2 -mtune=core2 -DCXX_HAS_-m32  -O3 -g    CMakeFiles/cmTC_c1443.dir/src.cxx.o  -o cmTC_c1443 -rdynamic -m32 
+/usr/bin/ld: cannot find crt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/5/libstdc++.so when searching for -lstdc++
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/5/libstdc++.a when searching for -lstdc++
+/usr/bin/ld: cannot find -lstdc++
+/usr/bin/ld: cannot find -lm
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/5/libgcc_s.so when searching for -lgcc_s
+/usr/bin/ld: cannot find -lgcc_s
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/5/libgcc.a when searching for -lgcc
+/usr/bin/ld: cannot find -lgcc
+/usr/bin/ld: cannot find -lc
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/5/libgcc_s.so when searching for -lgcc_s
+/usr/bin/ld: cannot find -lgcc_s
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/5/libgcc.a when searching for -lgcc
+/usr/bin/ld: cannot find -lgcc
+/usr/bin/ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c1443.dir/build.make:97: recipe for target 'cmTC_c1443' failed
+make[1]: *** [cmTC_c1443] Error 1
+make[1]: Leaving directory '/home/titocal/Documents/school work/2019 SPRINGS/MUlticore/research-project/concurrent-bst/transactional-version/rstm_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c1443/fast' failed
+make: *** [cmTC_c1443/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/titocal/Documents/school work/2019 SPRINGS/MUlticore/research-project/concurrent-bst/transactional-version/rstm_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fef49/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fef49.dir/build.make CMakeFiles/cmTC_fef49.dir/build
+make[1]: Entering directory '/home/titocal/Documents/school work/2019 SPRINGS/MUlticore/research-project/concurrent-bst/transactional-version/rstm_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fef49.dir/TestEndianess.c.o
+/usr/bin/cc    -O2 -g -DNDEBUG   -o CMakeFiles/cmTC_fef49.dir/TestEndianess.c.o   -c "/home/titocal/Documents/school work/2019 SPRINGS/MUlticore/research-project/concurrent-bst/transactional-version/rstm_build/CMakeFiles/CMakeTmp/TestEndianess.c"
+Linking C executable cmTC_fef49
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fef49.dir/link.txt --verbose=1
+/usr/bin/cc    -O2 -g -DNDEBUG    CMakeFiles/cmTC_fef49.dir/TestEndianess.c.o  -o cmTC_fef49 -rdynamic 
+make[1]: Leaving directory '/home/titocal/Documents/school work/2019 SPRINGS/MUlticore/research-project/concurrent-bst/transactional-version/rstm_build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
